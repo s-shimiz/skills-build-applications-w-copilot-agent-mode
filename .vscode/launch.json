@@ -1,6 +1,8 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
+
     {
       "name": "Run Django Server",
       "type": "python",
@@ -8,6 +10,15 @@
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
       "args": ["runserver", "0.0.0.0:8000"],
       "django": true
+    },
+    {
+      "name": "Run React App",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/octofit-tracker/frontend/node_modules/react-scripts/scripts/start.js",
+      "cwd": "${workspaceFolder}/octofit-tracker/frontend",
+      "runtimeExecutable": "node",
+      "console": "integratedTerminal"
     }
   ]
 }
